@@ -9,6 +9,24 @@ package baitap4;
  *
  * @author Admin
  */
-public class ChuyenXeNgoaiThanh {
-    
+public class ChuyenXeNgoaiThanh extends ChuyenXe {
+    // attributes
+    public String noiDen;
+    public int soNgay;
+  
+    // constructor
+    public ChuyenXeNgoaiThanh(int maChuyen,String taiXe, String soXe, double doanhThu, String noiDen, int soNgay)
+    {
+        super(maChuyen, taiXe, soXe, doanhThu);
+        this.noiDen = noiDen;
+        this.soNgay= soNgay;
+    }
+
+    // methods
+    // in thong tin chuyen xe
+    public void InThongTinChuyenXe(){
+        super.InThongTinChuyenXe();
+        System.out.println("Noi den: "+this.noiDen);
+        System.out.println("So ngay: "+this.soNgay);
+    }
 }
