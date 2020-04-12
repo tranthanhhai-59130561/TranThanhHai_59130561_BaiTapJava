@@ -9,6 +9,19 @@ package baitap3;
  *
  * @author Admin
  */
-public class SinhVienBiz {
+public class SinhVienBiz extends SinhVienPoly{
+    public double diemMarketing;
+    public double diemSales;   
     
+    public SinhVienBiz(String hoTen, String nganhHoc, double diemMarketing, double diemSales)
+    {
+        super(hoTen, nganhHoc);
+        this.diemMarketing = diemMarketing;
+        this.diemSales = diemSales;
+    }
+    
+    public double getDiem()
+            {
+                return ( 2*diemMarketing + diemSales)/3;
+            }
 }
