@@ -9,6 +9,21 @@ package baitap4;
  *
  * @author Admin
  */
-public class ChuyenXeNoiThanh {
+public class ChuyenXeNoiThanh extends ChuyenXe {
+    public String soTuyen;
+    public double soKm;
     
+    public ChuyenXeNoiThanh(int maChuyen, String taiXe, String soXe, double doanhThu, String soTuyen, double soKm)
+    {
+        super(maChuyen,taiXe,soXe,doanhThu);
+        this.soTuyen=soTuyen;
+        this.soKm=soKm;
+    }
+    
+    public void InThongTinChuyenXe()
+    {
+        super.InThongTinChuyenXe();
+        System.out.println("So tuyen: "+this.soTuyen);
+        System.out.println("So km: "+this.soKm);
+    }
 }
