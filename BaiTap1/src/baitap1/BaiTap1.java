@@ -9,6 +9,8 @@ package baitap1;
  *
  * @author Admin
  */
+
+
 public class BaiTap1 {
 
     /**
@@ -16,7 +18,8 @@ public class BaiTap1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hello Github");
+     NhanVien nv1 = new NhanVien();
+     nv1.InputThongtin();
+     nv1.PrintThongTin();
     }
-    
 }
